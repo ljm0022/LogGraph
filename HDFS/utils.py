@@ -62,7 +62,7 @@ class Data():
         hidden = np.zeros((row, line, 300))
         results = np.zeros((2, 300))
         finall = np.zeros((row, 300))
-        with open("/home/ustc-1/ljm/log/logdeep-master/data/hdfs/event2semantic_vec.json", 'r', encoding='UTF-8') as f:
+        with open("event2semantic_vec.json", 'r', encoding='UTF-8') as f:
            d = json.load(f)
         d['29'] = d['0']
         d['30'] = d['1'] 
